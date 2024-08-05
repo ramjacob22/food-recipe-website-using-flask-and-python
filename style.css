@@ -1,0 +1,1450 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    }
+
+body{
+    font-family: sans-serif;
+}
+
+.bgImage{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('089bce0b11f9a94c850061e14843f511.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: bgChange 20s linear infinite;
+    }
+@keyframes bgChange{
+    0%{
+    background-image: url('089bce0b11f9a94c850061e14843f511.jpg');
+        }
+    20%{
+    background-image: url('089bce0b11f9a94c850061e14843f511.jpg');
+        }
+    25%{
+    background-image: url('desktop.jpg');
+        }
+    45%{
+    background-image: url('desktop.jpg');
+        }
+    50%{
+    background-image: url('OIP (3).jpeg');
+        }
+    75%{
+    background-image: url('OIP (3).jpeg');
+        }
+    }
+
+
+.menu_bar{
+position: sticky;
+    width:100%;
+    background-color:;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    }
+
+.menu_bar h1 {
+    color: white;
+    position: sticky;
+    position: absolute;
+    top: 30px;
+    left: 200px;
+    font-size: 30px;
+    z-index:3;
+}
+
+.menu_bar ul{
+    list-style: none;
+    display: flex;
+}
+
+.menu_bar ul li {
+    padding: 10px 30px;
+    position: sticky;
+    position: relative;
+    right: 400px;
+    top: 9px;
+    z-index:3;
+}
+
+.menu_bar ul li a{
+    position: sticky;
+    color : white;
+    text-decoration: none;
+    font-size: 20px;
+    z-index:3;
+}
+
+.menu_bar ul li a:hover{
+    color : yellow;
+}
+
+.dropdown_menu{
+    display: none;
+}
+
+.menu_bar ul li:hover .dropdown_menu{
+    display: block;
+    position: absolute;
+    top: 1;
+    top: 100%;
+    background-color: black;
+    z-index:3;
+    }
+
+.dropdown_menu ul {
+    display: block;
+    margin: 10px;
+    left:10px;
+}
+
+.dropdown_menu ul li{
+position: sticky;
+    left: -10px;
+    width: 130px;
+    padding: 10px;
+    z-index:3;}
+
+.drop_menu-1{
+    display: none;
+    }
+
+.dropdown_menu ul li:hover .drop_menu-1{
+    display: block;
+    position: absolute;
+    left: 100px;
+    top: 0px;
+    background-color: black;
+    z-index:3;
+    }
+
+.drop_menu-2{
+    position: absolute;
+    display: none;
+    }
+
+.drop_menu-1 ul li:hover .drop_menu-2{
+    display: block;
+    position: absolute;
+    left: 100px;
+    top: 0px;
+    background-color: black;
+    z-index:3;
+    }
+
+ .drop_menu-2 ul li{
+    left: -20px;
+    width:150px;
+    padding: 4px;}
+
+.drop_menu-2 ul li a{
+    color: white;
+    padding: 0px;
+    }
+
+.drop_menu-3{
+    display: none;
+    }
+.drop_menu-2 ul li:hover .drop_menu-3{
+    display: block;
+    position: absolute;
+    left:150px;
+    top: 0px;
+    background-color: black;
+    z-index:3;
+    }
+ .drop_menu-3 ul li{
+    left: -20px;
+    width:150px;
+    padding: 4px;}
+
+.drop_menu-3 ul li a{
+    color: white;
+    padding: 0px;
+    }
+
+.container{
+    width: 400px;
+    position: relative;
+    transform: translate(-40%,-50%);
+    top: 300px;
+    right: 300px;
+    overflow: hidden;
+    border: 20px;
+    color: black;
+    border-radius: 8px;
+    box-shadow: 10px 25px 30px;
+    padding: 1px;
+
+    }
+.wrapper{
+    width: 110%;
+    display: flex;
+    animation: slide 15s infinite;
+}
+
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+        }
+     25%{
+        transform: translateX(0);
+     }
+     30%{
+        transform: translateX(-100%);
+        }
+      50%{
+        transform: translateX(-100%);
+        }
+      55%{
+        transform: translateX(-200%);
+        }
+      75%{
+        transform: translateX(-200%);
+        }
+      80%{
+        transform: translateX(-300%);
+        }
+      100%{
+        transform: translateX(-300%);
+        }
+}
+
+ img{
+    width: 100%;
+    }
+
+
+.button1{
+   position: absolute;
+   list-style: none;
+   width: 400px;
+   top: 200px;
+   left: 100px;
+   border-radius: 10px;
+   box-shadow: 10px 25px 30px;
+   margin: 20px;
+   z-index:;
+ }
+
+.button1 li a{
+   text-decoration: none;
+}
+.button2{
+   position: absolute;
+   list-style: none;
+   width: 400px;
+   top: 200px;
+   left: 550px;
+   border-radius: 10px;
+   box-shadow: 10px 25px 30px;
+   margin: 20px;
+   z-index:;
+ }
+
+.button2 li a{
+   text-decoration: none;
+}
+
+.button3{
+   position: absolute;
+   list-style: none;
+   width: 400px;
+   top: 200px;
+   left: 1000px;
+   border-radius: 10px;
+   box-shadow: 10px 25px 30px;
+   margin: 20px;
+   z-index:0;
+ }
+
+.button3 li a{
+text-decoration: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    }
+
+body{
+    font-family: sans-serif;
+}
+
+.bgImage{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('089bce0b11f9a94c850061e14843f511.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: bgChange 20s linear infinite;
+    }
+@keyframes bgChange{
+    0%{
+    background-image: url('089bce0b11f9a94c850061e14843f511.jpg');
+        }
+    20%{
+    background-image: url('089bce0b11f9a94c850061e14843f511.jpg');
+        }
+    25%{
+    background-image: url('desktop.jpg');
+        }
+    45%{
+    background-image: url('desktop.jpg');
+        }
+    50%{
+    background-image: url('12318979-Baking-background-with-ingredients-for-making-chocolate-chip-cookies-and-recipe-book.jpg');
+        }
+    70%{
+    background-image: url('12318979-Baking-background-with-ingredients-for-making-chocolate-chip-cookies-and-recipe-book.jpg');
+        }
+    75%{
+    background-image: url('OIP (3).jpeg');
+        }
+    95%{
+    background-image: url('OIP (3).jpeg');
+        }
+    }
+
+
+.menu_bar{
+position: sticky;
+    width:100%;
+    background-color:;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    }
+
+.menu_bar h1 {
+    color: white;
+    position: sticky;
+    position: absolute;
+    top: 30px;
+    left: 200px;
+    font-size: 30px;
+    z-index:3;
+}
+
+.menu_bar ul{
+    list-style: none;
+    display: flex;
+}
+
+.menu_bar ul li {
+    padding: 10px 30px;
+    position: sticky;
+    position: relative;
+    right: 400px;
+    top: 9px;
+    z-index:3;
+}
+
+.menu_bar ul li a{
+    position: sticky;
+    color : white;
+    text-decoration: none;
+    font-size: 20px;
+    z-index:3;
+}
+
+.menu_bar ul li a:hover{
+    color : yellow;
+}
+
+.dropdown_menu{
+    display: none;
+}
+
+.menu_bar ul li:hover .dropdown_menu{
+    display: block;
+    position: absolute;
+    top: 1;
+    top: 100%;
+    background-color: black;
+    z-index:3;
+    }
+
+.dropdown_menu ul {
+    display: block;
+    margin: 10px;
+    left:10px;
+}
+
+.dropdown_menu ul li{
+position: sticky;
+    left: -10px;
+    width: 130px;
+    padding: 10px;
+    z-index:3;}
+
+.drop_menu-1{
+    display: none;
+    }
+
+.dropdown_menu ul li:hover .drop_menu-1{
+    display: block;
+    position: absolute;
+    left: 100px;
+    top: 0px;
+    background-color: black;
+    z-index:3;
+    }
+
+.drop_menu-2{
+    position: absolute;
+    display: none;
+    }
+
+.drop_menu-1 ul li:hover .drop_menu-2{
+    display: block;
+    position: absolute;
+    left: 100px;
+    top: 0px;
+    background-color: black;
+    z-index:3;
+    }
+
+ .drop_menu-2 ul li{
+    left: -20px;
+    width:150px;
+    padding: 4px;}
+
+.drop_menu-2 ul li a{
+    color: white;
+    padding: 0px;
+    }
+
+.drop_menu-3{
+    display: none;
+    }
+.drop_menu-2 ul li:hover .drop_menu-3{
+    display: block;
+    position: absolute;
+    left:150px;
+    top: 0px;
+    background-color: black;
+    z-index:3;
+    }
+ .drop_menu-3 ul li{
+    left: -20px;
+    width:150px;
+    padding: 4px;}
+
+.drop_menu-3 ul li a{
+    color: white;
+    padding: 0px;
+    }
+
+.container{
+    width: 400px;
+    position: relative;
+    transform: translate(-40%,-50%);
+    top: 300px;
+    right: 300px;
+    overflow: hidden;
+    border: 20px;
+    color: black;
+    border-radius: 8px;
+    box-shadow: 10px 25px 30px;
+    padding: 1px;
+
+    }
+.wrapper{
+    width: 110%;
+    display: flex;
+    animation: slide 15s infinite;
+}
+
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+        }
+     25%{
+        transform: translateX(0);
+     }
+     30%{
+        transform: translateX(-100%);
+        }
+      50%{
+        transform: translateX(-100%);
+        }
+      55%{
+        transform: translateX(-200%);
+        }
+      75%{
+        transform: translateX(-200%);
+        }
+      80%{
+        transform: translateX(-300%);
+        }
+      100%{
+        transform: translateX(-300%);
+        }
+}
+
+ img{
+    width: 100%;
+    }
+
+
+.button1{
+   position: absolute;
+   list-style: none;
+   width: 400px;
+   top: 200px;
+   left: 100px;
+   border-radius: 10px;
+   box-shadow: 10px 25px 30px;
+   margin: 20px;
+   z-index:;
+ }
+
+.button1 li a{
+   text-decoration: none;
+}
+.button2{
+   position: absolute;
+   list-style: none;
+   width: 400px;
+   top: 200px;
+   left: 550px;
+   border-radius: 10px;
+   box-shadow: 10px 25px 30px;
+   margin: 20px;
+   z-index:;
+ }
+
+.button2 li a{
+   text-decoration: none;
+}
+
+.button3{
+   position: absolute;
+   list-style: none;
+   width: 400px;
+   top: 200px;
+   left: 1000px;
+   border-radius: 10px;
+   box-shadow: 10px 25px 30px;
+   margin: 20px;
+   z-index:0;
+ }
+
+.button3 li a{
+text-decoration: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    }
+
+body{
+    font-family: sans-serif;
+}
+
+.bgImage{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('089bce0b11f9a94c850061e14843f511.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: bgChange 20s linear infinite;
+    }
+@keyframes bgChange{
+    0%{
+    background-image: url('089bce0b11f9a94c850061e14843f511.jpg');
+        }
+    20%{
+    background-image: url('089bce0b11f9a94c850061e14843f511.jpg');
+        }
+    25%{
+    background-image: url('desktop.jpg');
+        }
+    45%{
+    background-image: url('desktop.jpg');
+        }
+    50%{
+    background-image: url('12318979-Baking-background-with-ingredients-for-making-chocolate-chip-cookies-and-recipe-book.jpg');
+        }
+    70%{
+    background-image: url('12318979-Baking-background-with-ingredients-for-making-chocolate-chip-cookies-and-recipe-book.jpg');
+        }
+    75%{
+    background-image: url('OIP (3).jpeg');
+        }
+    95%{
+    background-image: url('OIP (3).jpeg');
+        }
+    }
+
+
+.menu_bar{
+position: sticky;
+    width:100%;
+    background-color:;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    }
+
+.menu_bar h1 {
+    color: white;
+    position: sticky;
+    position: absolute;
+    top: 30px;
+    left: 200px;
+    font-size: 30px;
+    z-index:3;
+}
+
+.menu_bar ul{
+    list-style: none;
+    display: flex;
+}
+
+.menu_bar ul li {
+    padding: 10px 30px;
+    position: sticky;
+    position: relative;
+    right: 400px;
+    top: 9px;
+    z-index:3;
+}
+
+.menu_bar ul li a{
+    position: sticky;
+    color : white;
+    text-decoration: none;
+    font-size: 20px;
+    z-index:3;
+}
+
+.menu_bar ul li a:hover{
+    color : yellow;
+}
+
+.dropdown_menu{
+    display: none;
+}
+
+.menu_bar ul li:hover .dropdown_menu{
+    display: block;
+    position: absolute;
+    top: 1;
+    top: 100%;
+    background-color: black;
+    z-index:3;
+    }
+
+.dropdown_menu ul {
+    display: block;
+    margin: 10px;
+    left:10px;
+}
+
+.dropdown_menu ul li{
+position: sticky;
+    left: -10px;
+    width: 130px;
+    padding: 10px;
+    z-index:3;}
+
+.drop_menu-1{
+    display: none;
+    }
+
+.dropdown_menu ul li:hover .drop_menu-1{
+    display: block;
+    position: absolute;
+    left: 100px;
+    top: 0px;
+    background-color: black;
+    z-index:3;
+    }
+
+.drop_menu-2{
+    position: absolute;
+    display: none;
+    }
+
+.drop_menu-1 ul li:hover .drop_menu-2{
+    display: block;
+    position: absolute;
+    left: 100px;
+    top: 0px;
+    background-color: black;
+    z-index:3;
+    }
+
+ .drop_menu-2 ul li{
+    left: -20px;
+    width:150px;
+    padding: 4px;}
+
+.drop_menu-2 ul li a{
+    color: white;
+    padding: 0px;
+    }
+
+.drop_menu-3{
+    display: none;
+    }
+.drop_menu-2 ul li:hover .drop_menu-3{
+    display: block;
+    position: absolute;
+    left:150px;
+    top: 0px;
+    background-color: black;
+    z-index:3;
+    }
+ .drop_menu-3 ul li{
+    left: -20px;
+    width:150px;
+    padding: 4px;}
+
+.drop_menu-3 ul li a{
+    color: white;
+    padding: 0px;
+    }
+
+.container{
+    width: 400px;
+    position: relative;
+    transform: translate(-40%,-50%);
+    top: 300px;
+    right: 300px;
+    overflow: hidden;
+    border: 20px;
+    color: black;
+    border-radius: 8px;
+    box-shadow: 10px 25px 30px;
+    padding: 1px;
+
+    }
+.wrapper{
+    width: 110%;
+    display: flex;
+    animation: slide 15s infinite;
+}
+
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+        }
+     25%{
+        transform: translateX(0);
+     }
+     30%{
+        transform: translateX(-100%);
+        }
+      50%{
+        transform: translateX(-100%);
+        }
+      55%{
+        transform: translateX(-200%);
+        }
+      75%{
+        transform: translateX(-200%);
+        }
+      80%{
+        transform: translateX(-300%);
+        }
+      100%{
+        transform: translateX(-300%);
+        }
+}
+
+ img{
+    width: 100%;
+    }
+
+
+.button1{
+   position: absolute;
+   list-style: none;
+   width: 400px;
+   top: 200px;
+   left: 100px;
+   border-radius: 10px;
+   box-shadow: 10px 25px 30px;
+   margin: 20px;
+   z-index:;
+ }
+
+.button1 li a{
+   text-decoration: none;
+}
+.button2{
+   position: absolute;
+   list-style: none;
+   width: 400px;
+   top: 200px;
+   left: 550px;
+   border-radius: 10px;
+   box-shadow: 10px 25px 30px;
+   margin: 20px;
+   z-index:;
+ }
+
+.button2 li a{
+   text-decoration: none;
+}
+
+.button3{
+   position: absolute;
+   list-style: none;
+   width: 400px;
+   top: 200px;
+   left: 1000px;
+   border-radius: 10px;
+   box-shadow: 10px 25px 30px;
+   margin: 20px;
+   z-index:0;
+ }
+
+.button3 li a{
+text-decoration: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    }
+
+body{
+    font-family: sans-serif;
+}
+
+.bgImage{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('089bce0b11f9a94c850061e14843f511.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: bgChange 20s linear infinite;
+    }
+@keyframes bgChange{
+    0%{
+    background-image: url('089bce0b11f9a94c850061e14843f511.jpg');
+        }
+    20%{
+    background-image: url('089bce0b11f9a94c850061e14843f511.jpg');
+        }
+    25%{
+    background-image: url('desktop.jpg');
+        }
+    45%{
+    background-image: url('desktop.jpg');
+        }
+    50%{
+    background-image: url('12318979-Baking-background-with-ingredients-for-making-chocolate-chip-cookies-and-recipe-book.jpg');
+        }
+    70%{
+    background-image: url('12318979-Baking-background-with-ingredients-for-making-chocolate-chip-cookies-and-recipe-book.jpg');
+        }
+    75%{
+    background-image: url('OIP (3).jpeg');
+        }
+    95%{
+    background-image: url('OIP (3).jpeg');
+        }
+    }
+
+
+.menu_bar{
+position: sticky;
+    width:100%;
+    background-color:;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    }
+
+.menu_bar h1 {
+    color: white;
+    position: sticky;
+    position: absolute;
+    top: 30px;
+    left: 200px;
+    font-size: 30px;
+    z-index:3;
+}
+
+.menu_bar ul{
+    list-style: none;
+    display: flex;
+}
+
+.menu_bar ul li {
+    padding: 10px 30px;
+    position: sticky;
+    position: relative;
+    right: 400px;
+    top: 9px;
+    z-index:3;
+}
+
+.menu_bar ul li a{
+    position: sticky;
+    color : white;
+    text-decoration: none;
+    font-size: 20px;
+    z-index:3;
+}
+
+.menu_bar ul li a:hover{
+    color : yellow;
+}
+
+.dropdown_menu{
+    display: none;
+}
+
+.menu_bar ul li:hover .dropdown_menu{
+    display: block;
+    position: absolute;
+    top: 1;
+    top: 100%;
+    background-color: black;
+    z-index:3;
+    }
+
+.dropdown_menu ul {
+    display: block;
+    margin: 10px;
+    left:10px;
+}
+
+.dropdown_menu ul li{
+position: sticky;
+    left: -10px;
+    width: 130px;
+    padding: 10px;
+    z-index:3;}
+
+.drop_menu-1{
+    display: none;
+    }
+
+.dropdown_menu ul li:hover .drop_menu-1{
+    display: block;
+    position: absolute;
+    left: 100px;
+    top: 0px;
+    background-color: black;
+    z-index:3;
+    }
+
+.drop_menu-2{
+    position: absolute;
+    display: none;
+    }
+
+.drop_menu-1 ul li:hover .drop_menu-2{
+    display: block;
+    position: absolute;
+    left: 100px;
+    top: 0px;
+    background-color: black;
+    z-index:3;
+    }
+
+ .drop_menu-2 ul li{
+    left: -20px;
+    width:150px;
+    padding: 4px;}
+
+.drop_menu-2 ul li a{
+    color: white;
+    padding: 0px;
+    }
+
+.drop_menu-3{
+    display: none;
+    }
+.drop_menu-2 ul li:hover .drop_menu-3{
+    display: block;
+    position: absolute;
+    left:150px;
+    top: 0px;
+    background-color: black;
+    z-index:3;
+    }
+ .drop_menu-3 ul li{
+    left: -20px;
+    width:150px;
+    padding: 4px;}
+
+.drop_menu-3 ul li a{
+    color: white;
+    padding: 0px;
+    }
+
+.container{
+    width: 400px;
+    position: relative;
+    transform: translate(-40%,-50%);
+    top: 300px;
+    right: 300px;
+    overflow: hidden;
+    border: 20px;
+    color: black;
+    border-radius: 8px;
+    box-shadow: 10px 25px 30px;
+    padding: 1px;
+
+    }
+.wrapper{
+    width: 110%;
+    display: flex;
+    animation: slide 15s infinite;
+}
+
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+        }
+     25%{
+        transform: translateX(0);
+     }
+     30%{
+        transform: translateX(-100%);
+        }
+      50%{
+        transform: translateX(-100%);
+        }
+      55%{
+        transform: translateX(-200%);
+        }
+      75%{
+        transform: translateX(-200%);
+        }
+      80%{
+        transform: translateX(-300%);
+        }
+      100%{
+        transform: translateX(-300%);
+        }
+}
+
+ img{
+    width: 100%;
+    }
+
+
+.button1{
+   position: absolute;
+   list-style: none;
+   width: 400px;
+   top: 200px;
+   left: 100px;
+   border-radius: 10px;
+   box-shadow: 10px 25px 30px;
+   margin: 20px;
+   z-index:;
+ }
+
+.button1 li a{
+   text-decoration: none;
+}
+.button2{
+   position: absolute;
+   list-style: none;
+   width: 400px;
+   top: 200px;
+   left: 550px;
+   border-radius: 10px;
+   box-shadow: 10px 25px 30px;
+   margin: 20px;
+   z-index:;
+ }
+
+.button2 li a{
+   text-decoration: none;
+}
+
+.button3{
+   position: absolute;
+   list-style: none;
+   width: 400px;
+   top: 200px;
+   left: 1000px;
+   border-radius: 10px;
+   box-shadow: 10px 25px 30px;
+   margin: 20px;
+   z-index:0;
+ }
+
+.button3 li a{
+text-decoration: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    }
+
+body{
+    font-family: sans-serif;
+}
+
+.bgImage{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('089bce0b11f9a94c850061e14843f511.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: bgChange 20s linear infinite;
+    }
+@keyframes bgChange{
+    0%{
+    background-image: url('089bce0b11f9a94c850061e14843f511.jpg');
+        }
+    20%{
+    background-image: url('089bce0b11f9a94c850061e14843f511.jpg');
+        }
+    25%{
+    background-image: url('desktop.jpg');
+        }
+    45%{
+    background-image: url('desktop.jpg');
+        }
+    50%{
+    background-image: url('12318979-Baking-background-with-ingredients-for-making-chocolate-chip-cookies-and-recipe-book.jpg');
+        }
+    70%{
+    background-image: url('12318979-Baking-background-with-ingredients-for-making-chocolate-chip-cookies-and-recipe-book.jpg');
+        }
+    75%{
+    background-image: url('OIP (3).jpeg');
+        }
+    95%{
+    background-image: url('OIP (3).jpeg');
+        }
+    }
+
+
+.menu_bar{
+position: sticky;
+    width:100%;
+    background-color:;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    }
+
+.menu_bar h1 {
+    color: white;
+    position: sticky;
+    position: absolute;
+    top: 30px;
+    left: 200px;
+    font-size: 30px;
+    z-index:3;
+}
+
+.menu_bar ul{
+    list-style: none;
+    display: flex;
+}
+
+.menu_bar ul li {
+    padding: 10px 30px;
+    position: sticky;
+    position: relative;
+    right: 400px;
+    top: 9px;
+    z-index:3;
+}
+
+.menu_bar ul li a{
+    position: sticky;
+    color : white;
+    text-decoration: none;
+    font-size: 20px;
+    z-index:3;
+}
+
+.menu_bar ul li a:hover{
+    color : yellow;
+}
+
+.dropdown_menu{
+    display: none;
+}
+
+.menu_bar ul li:hover .dropdown_menu{
+    display: block;
+    position: absolute;
+    top: 1;
+    top: 100%;
+    background-color: black;
+    z-index:3;
+    }
+
+.dropdown_menu ul {
+    display: block;
+    margin: 10px;
+    left:10px;
+}
+
+.dropdown_menu ul li{
+position: sticky;
+    left: -10px;
+    width: 130px;
+    padding: 10px;
+    z-index:3;}
+
+.drop_menu-1{
+    display: none;
+    }
+
+.dropdown_menu ul li:hover .drop_menu-1{
+    display: block;
+    position: absolute;
+    left: 100px;
+    top: 0px;
+    background-color: black;
+    z-index:3;
+    }
+
+.drop_menu-2{
+    position: absolute;
+    display: none;
+    }
+
+.drop_menu-1 ul li:hover .drop_menu-2{
+    display: block;
+    position: absolute;
+    left: 100px;
+    top: 0px;
+    background-color: black;
+    z-index:3;
+    }
+
+ .drop_menu-2 ul li{
+    left: -20px;
+    width:150px;
+    padding: 4px;}
+
+.drop_menu-2 ul li a{
+    color: white;
+    padding: 0px;
+    }
+
+.drop_menu-3{
+    display: none;
+    }
+.drop_menu-2 ul li:hover .drop_menu-3{
+    display: block;
+    position: absolute;
+    left:150px;
+    top: 0px;
+    background-color: black;
+    z-index:3;
+    }
+ .drop_menu-3 ul li{
+    left: -20px;
+    width:150px;
+    padding: 4px;}
+
+.drop_menu-3 ul li a{
+    color: white;
+    padding: 0px;
+    }
+
+.container{
+    width: 400px;
+    position: relative;
+    transform: translate(-40%,-50%);
+    top: 300px;
+    right: 300px;
+    overflow: hidden;
+    border: 20px;
+    color: black;
+    border-radius: 8px;
+    box-shadow: 10px 25px 30px;
+    padding: 1px;
+
+    }
+.wrapper{
+    width: 110%;
+    display: flex;
+    animation: slide 15s infinite;
+}
+
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+        }
+     25%{
+        transform: translateX(0);
+     }
+     30%{
+        transform: translateX(-100%);
+        }
+      50%{
+        transform: translateX(-100%);
+        }
+      55%{
+        transform: translateX(-200%);
+        }
+      75%{
+        transform: translateX(-200%);
+        }
+      80%{
+        transform: translateX(-300%);
+        }
+      100%{
+        transform: translateX(-300%);
+        }
+}
+
+ img{
+    width: 100%;
+    }
+
+
+.button1{
+   position: absolute;
+   list-style: none;
+   width: 300px;
+   top: 100px;
+   left: 100px;
+
+   border-radius: 10px;
+   box-shadow: 10px 25px 30px;
+   margin: 20px;
+   z-index:;
+ }
+
+.button1 li a{
+   text-decoration: none;
+}
+.button2{
+   position: absolute;
+   list-style: none;
+   width: 300px;
+   top: 100px;
+   left: 550px;
+   border-radius: 10px;
+   box-shadow: 10px 25px 30px;
+   margin: 20px;
+   z-index:;
+ }
+
+.button2 li a{
+   text-decoration: none;
+}
+
+.button3{
+   position: absolute;
+   list-style: none;
+   width:300px;
+   top: 100px;
+   left: 1000px;
+   border-radius: 10px;
+   box-shadow: 10px 25px 30px;
+   margin: 20px;
+   z-index:0;
+ }
+
+.button3 li a{
+text-decoration: none;
+}
+
+
+.button4{
+   position: absolute;
+   list-style: none;
+   width:300px;
+   top: 400px;
+   left: 100px;
+   border-radius: 10px;
+   box-shadow: 10px 25px 30px;
+   margin: 20px;
+   z-index:0;
+ }
+
+.button4 li a{
+text-decoration: none;
+}
+
+
+.button5{
+   position: absolute;
+   list-style: none;
+   width:300px;
+   top: 400px;
+   left: 550px;
+   border-radius: 10px;
+   box-shadow: 10px 25px 30px;
+   margin: 20px;
+   z-index:0;
+ }
+
+.button5 li a{
+text-decoration: none;
+}
+
+.button6{
+   position: absolute;
+   list-style: none;
+   width:300px;
+   top: 400px;
+   left: 1000px;
+   border-radius: 10px;
+   box-shadow: 10px 25px 30px;
+   margin: 20px;
+   z-index:0;
+ }
+
+.button6 li a{
+text-decoration: none;
+}
+
